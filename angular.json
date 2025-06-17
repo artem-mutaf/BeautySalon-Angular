@@ -25,8 +25,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               {
+                
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "/assets"
+              },
+              {
+                "input": "src",
+                "glob": "favicon.ico",
+                "output": "/"
               }
             ],
             "styles": [
@@ -94,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
